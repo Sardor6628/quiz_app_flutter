@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app_flutter/constants/custom_colors.dart';
 import 'package:quiz_app_flutter/model/quiz_types_model.dart';
+import 'package:quiz_app_flutter/presentation/quiz_page.dart';
 class QuizTypeListPage extends StatelessWidget {
   const QuizTypeListPage({super.key});
 
@@ -67,7 +68,7 @@ class QuizTypeListPage extends StatelessWidget {
                                     shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(30))),
                                 onPressed: () {
-                                  Get.back();
+                                  Get.offAll(() => const QuizPage());
                                 },
                                 child: const Text('OK',
                                     style: TextStyle(

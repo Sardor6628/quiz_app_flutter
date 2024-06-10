@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:quiz_app_flutter/presentation/splash_screen.dart';
 
+import 'presentation/quiz_page.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -14,6 +16,7 @@ class MyApp extends StatelessWidget {
     return hideKeyboardWhileTapOnScreen(context,
         child: GetMaterialApp(
           home: SplashScreen(),
+          // home: QuizPage(),
         ));
   }
 
